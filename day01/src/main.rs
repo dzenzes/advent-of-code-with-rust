@@ -25,7 +25,8 @@ fn main() {
         }
     }
     calories.sort();
-    let max_value: u64 = *calories.iter().max().expect("Couldn't find max value");
+
+    let max_value = *calories.iter().max().expect("Couldn't find max value");
 
     println!("Solution for day 01/1: {max_value}");
 
